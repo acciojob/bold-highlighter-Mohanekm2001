@@ -1,13 +1,20 @@
+
+ const bold = document.querySelectorAll("strong");
 function highlight() {
     //Write your code here
-	bold.style.color = green;
+	for(var i = 0;i<bold.length;i++){
+        bold[i].style.color = "green";
 }
 
-let bold = document.getElementsByTagName("strong");
-bold.addEventListener("mouseover" , highlight);
-bold.addEventListener("mouseout" ,return_normal);
+
+}
+
+
 function return_normal() {
     //Write your code here
+	for(var i = 0;i<bold.length;i++){
+        bold[i].style.color = "black";
+}
 
-    bold.style.color = black;
+    
 }
